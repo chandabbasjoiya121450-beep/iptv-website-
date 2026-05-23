@@ -1,3 +1,4 @@
+
 const firebaseConfig = {
 apiKey: "AIzaSyAWdBeBnPSHJPInr-dOQ5uAcssUls1msjw",
 authDomain: "iptv-69f46.firebaseapp.com",
@@ -25,7 +26,7 @@ userCredential.user.sendEmailVerification()
 
 .then(()=>{
 
-alert("Verification email sent successfully");
+alert("Verification email sent");
 
 });
 
@@ -50,11 +51,11 @@ auth.signInWithEmailAndPassword(email,password)
 
 if(userCredential.user.emailVerified){
 
-window.location.href = "index.html";
+window.location.href = "dashboard.html";
 
 }else{
 
-alert("Please verify your email first");
+alert("Verify your email first");
 
 }
 
@@ -76,7 +77,7 @@ auth.signInWithPopup(provider)
 
 .then(()=>{
 
-window.location.href = "index.html";
+window.location.href = "dashboard.html";
 
 })
 
