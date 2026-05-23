@@ -1,1 +1,1 @@
-console.log('LIVE IPTV Website Loaded Successfully');
+console.log('Galaxy IPTV Loaded Successfully');
