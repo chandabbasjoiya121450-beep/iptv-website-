@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Galaxy IPTV Login</title>
 <link rel="stylesheet" href="login.css">
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
 </head>
 <body>
 
@@ -10,13 +16,21 @@
 
 <h1>GALAXY IPTV</h1>
 
-<input type="email" placeholder="Email">
-<input type="password" placeholder="Password">
+<input type="email" id="email" placeholder="Enter Email">
 
-<button>Create Account</button>
-<button>Login</button>
+<input type="password" id="password" placeholder="Enter Password">
+
+<button onclick="signup()">Create Account</button>
+
+<button onclick="login()">Login</button>
+
+<button onclick="googleLogin()" class="google">
+Continue With Google
+</button>
 
 </div>
+
+<script src="login.js"></script>
 
 </body>
 </html>
